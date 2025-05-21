@@ -24,20 +24,6 @@ A Python-based automation system to track and manage hostel latecomers using a t
 
 ---
 
-## 📁 Project Structure
-
-```
-HostelLatecomerSystem/
-├── main.py                # Main execution logic
-├── database.py            # Handles SQLite database operations
-├── email_handler.py       # Sends different types of emails
-├── students.db            # SQLite database file
-├── .env                   # (Optional) for email credentials
-└── README.md              # Project overview
-```
-
----
-
 ## 🔑 3-Strike Logic Workflow
 
 1. **First offense:**
@@ -51,32 +37,6 @@ HostelLatecomerSystem/
 3. **Third offense:**
    - Update offense count
    - Flag student with ₹3000 fine
-
----
-
-## 🛠 Setup Instructions
-
-1. **Clone the Repository**
-```bash
-git clone https://github.com/aditya-bytecraft/HostelLatecomerSystem.git
-cd HostelLatecomerSystem
-```
-
-2. **Install Python Dependencies**
-```bash
-pip install -r requirements.txt
-```
-(You only need built-in libraries like `sqlite3` and `smtplib`, so a `requirements.txt` may be optional.)
-
-3. **Configure Email Credentials**
-- Go to your [Google Account App Passwords](https://myaccount.google.com/apppasswords)
-- Generate one for "Mail" and copy it
-- Store credentials securely in environment variables or replace in code (not recommended)
-
-4. **Run the Program**
-```bash
-python main.py
-```
 
 ---
 
